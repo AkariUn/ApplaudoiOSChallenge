@@ -52,7 +52,15 @@ class ViewController: UIViewController {
             }
         })
     }
- 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let viewController = segue.destination as? DetailViewController,
+            let cell = sender as? AnimeCell,
+            let indexPath = collectionView.indexPath(for: cell),
+            let anime = items?[indexPath.section].animes[indexPath.row] {
+            viewController.anime = anime
+            
+        }
+    }
 }
 
 extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {

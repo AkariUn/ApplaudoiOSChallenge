@@ -16,7 +16,7 @@ class AnimeCell: UICollectionViewCell {
     func setup(name:String, imageUrl:String) {
         title?.text = name
         
-        let placeholder = UIImage(named: "")
+        let placeholder = UIImage(named: "generic")
         
         guard let encodedUrl = imageUrl.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
             else {

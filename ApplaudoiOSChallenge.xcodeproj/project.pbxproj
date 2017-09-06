@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70475EC31F60429A00F5E9F7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70475EC21F60429A00F5E9F7 /* DetailViewController.swift */; };
 		785876551F5FC5C5006245CE /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785876541F5FC5C5006245CE /* HeaderCell.swift */; };
 		785876581F5FC750006245CE /* SequenceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785876571F5FC750006245CE /* SequenceExtension.swift */; };
 		7858765A1F5FD23F006245CE /* AnimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785876591F5FD23F006245CE /* AnimeCell.swift */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		023E3DEBB68193C74FC6D265 /* Pods-ApplaudoiOSChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApplaudoiOSChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-ApplaudoiOSChallenge/Pods-ApplaudoiOSChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		18AA38BAB773B69D0F8C27D8 /* Pods_ApplaudoiOSChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApplaudoiOSChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70475EC21F60429A00F5E9F7 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		785876541F5FC5C5006245CE /* HeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
 		785876571F5FC750006245CE /* SequenceExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequenceExtension.swift; sourceTree = "<group>"; };
 		785876591F5FD23F006245CE /* AnimeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimeCell.swift; sourceTree = "<group>"; };
@@ -54,10 +56,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		70475EC11F60428800F5E9F7 /* DetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				70475EC21F60429A00F5E9F7 /* DetailViewController.swift */,
+			);
+			name = DetailViewController;
+			sourceTree = "<group>";
+		};
 		785876511F5FC590006245CE /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				785876521F5FC5AD006245CE /* MainViewController */,
+				70475EC11F60428800F5E9F7 /* DetailViewController */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -258,7 +269,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		51E4F1CCA3E282AF2E7EC824 /* [CP] Embed Pods Frameworks */ = {
@@ -295,6 +306,7 @@
 				78F08F7E1F5FBA1700EE786A /* AnimeListResponse.swift in Sources */,
 				78F08F791F5F999D00EE786A /* ServiceManager.swift in Sources */,
 				78F08F7C1F5FA17D00EE786A /* AccessToken.swift in Sources */,
+				70475EC31F60429A00F5E9F7 /* DetailViewController.swift in Sources */,
 				7858765A1F5FD23F006245CE /* AnimeCell.swift in Sources */,
 				785876551F5FC5C5006245CE /* HeaderCell.swift in Sources */,
 			);

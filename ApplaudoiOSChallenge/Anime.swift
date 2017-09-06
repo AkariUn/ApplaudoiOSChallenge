@@ -18,6 +18,7 @@ struct Anime: Mappable {
     var titleJapanese : String!
     var scroe : Int!
     var image : String!
+    var banner : String?
     var totalEpisodes : Int!
     var genres : [String]!
     
@@ -31,7 +32,8 @@ struct Anime: Mappable {
         titleEnglish <- map["anime.title_english"]
         titleJapanese <- map["anime.title_japanese"]
         scroe <- map["anime.average_score"]
-        image <- map["anime.image_url_med"]
+        image <- map["anime.image_url_lge"]
+        banner <- map["anime.image_url_banner"]
         totalEpisodes <- map["anime.total_episodes"]
         genres <- map["anime.genres"]
     }
