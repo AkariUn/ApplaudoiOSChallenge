@@ -9,9 +9,10 @@
 import Foundation
 import ObjectMapper
 
+
 struct Anime: Mappable {
     
-    var id :  String!
+    var id :  Int!
     var titleRomaji : String!
     var titleEnglish : String!
     var titleJapanese : String!
@@ -36,6 +37,7 @@ struct Anime: Mappable {
     }
     
 }
+
 class AnimeCategory {
     var name:String
     var animes:[Anime]

@@ -8,11 +8,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Trade Gothic Regular.ttf">
-            <string>TradeGothic-CondEighteenObl</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -26,9 +21,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="yLd-4d-UBG">
-                                <rect key="frame" x="0.0" y="115" width="375" height="436"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="yLd-4d-UBG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="Fuh-rr-Uy0">
                                     <size key="itemSize" width="120" height="180"/>
@@ -37,7 +31,7 @@
                                     <inset key="sectionInset" minX="5" minY="5" maxX="5" maxY="5"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="rW0-2R-ud6">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="rW0-2R-ud6" customClass="AnimeCell" customModule="ApplaudoiOSChallenge" customModuleProvider="target">
                                         <rect key="frame" x="5" y="53" width="120" height="180"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -47,14 +41,41 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="s9T-Da-TOi">
                                                     <rect key="frame" x="0.0" y="0.0" width="120" height="180"/>
                                                 </imageView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DgP-F2-x2g">
+                                                    <rect key="frame" x="0.0" y="160" width="120" height="20"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7kS-Rb-f5s">
+                                                            <rect key="frame" x="5" y="5" width="110" height="10"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="0.80000000000000004" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstItem="7kS-Rb-f5s" firstAttribute="leading" secondItem="DgP-F2-x2g" secondAttribute="leading" constant="5" id="4fm-IQ-ZUd"/>
+                                                        <constraint firstItem="7kS-Rb-f5s" firstAttribute="top" secondItem="DgP-F2-x2g" secondAttribute="top" constant="5" id="URB-ux-Lt0"/>
+                                                        <constraint firstAttribute="bottom" secondItem="7kS-Rb-f5s" secondAttribute="bottom" constant="5" id="Y04-fe-Znd"/>
+                                                        <constraint firstAttribute="trailing" secondItem="7kS-Rb-f5s" secondAttribute="trailing" constant="5" id="aDP-Kd-AMF"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                         </view>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="s9T-Da-TOi" firstAttribute="top" secondItem="rW0-2R-ud6" secondAttribute="top" id="LKB-5P-Jzr"/>
+                                            <constraint firstAttribute="trailing" secondItem="DgP-F2-x2g" secondAttribute="trailing" id="TBp-ea-duK"/>
+                                            <constraint firstItem="DgP-F2-x2g" firstAttribute="top" relation="greaterThanOrEqual" secondItem="rW0-2R-ud6" secondAttribute="top" id="fze-dW-TYg"/>
+                                            <constraint firstItem="DgP-F2-x2g" firstAttribute="leading" secondItem="rW0-2R-ud6" secondAttribute="leading" id="han-Fq-Gxi"/>
                                             <constraint firstAttribute="bottom" secondItem="s9T-Da-TOi" secondAttribute="bottom" id="jW0-zq-6ze"/>
                                             <constraint firstAttribute="trailing" secondItem="s9T-Da-TOi" secondAttribute="trailing" id="ncM-AR-XQb"/>
+                                            <constraint firstAttribute="bottom" secondItem="DgP-F2-x2g" secondAttribute="bottom" id="tOD-ml-7cH"/>
                                             <constraint firstItem="s9T-Da-TOi" firstAttribute="leading" secondItem="rW0-2R-ud6" secondAttribute="leading" id="zcc-yA-5hT"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="image" destination="s9T-Da-TOi" id="f1H-sN-MoU"/>
+                                            <outlet property="title" destination="7kS-Rb-f5s" id="hfB-D5-kZL"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="header" id="SrC-GC-O8e" customClass="HeaderCell" customModule="ApplaudoiOSChallenge" customModuleProvider="target">
@@ -62,8 +83,8 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XD7-pV-gb5">
-                                            <rect key="frame" x="180.5" y="14" width="14.5" height="21"/>
-                                            <fontDescription key="fontDescription" name="TradeGothic-CondEighteenObl" family="TradeGothic" pointSize="18"/>
+                                            <rect key="frame" x="179.5" y="14" width="16.5" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <color key="textColor" red="0.2470588235" green="0.2666666667" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -94,8 +115,17 @@
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yLd-4d-UBG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8ik-Jr-12C"/>
+                            <constraint firstItem="yLd-4d-UBG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ch6-Bk-Ehc"/>
+                            <constraint firstAttribute="bottom" secondItem="yLd-4d-UBG" secondAttribute="bottom" id="XaI-ge-TKS"/>
+                            <constraint firstAttribute="trailing" secondItem="yLd-4d-UBG" secondAttribute="trailing" id="cHx-LI-8uX"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="the-lO-AFk"/>
+                    <connections>
+                        <outlet property="collectionView" destination="yLd-4d-UBG" id="vZG-6x-GxH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -106,7 +106,7 @@ class ServiceManager {
     
     
     func getAnimeList(for userId:String ,complete:@escaping (_ result:NetworkingResult, _ data:[Anime]?) -> Void) {
-        var url = "\(BaseUrl)user/\(userId)/animelist/raw"
+        var url = "\(BaseUrl)user/\(userId)/animelist"
         debugPrint(url)
         let userDefaults = UserDefaults.standard
         

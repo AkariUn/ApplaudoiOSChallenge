@@ -11,14 +11,25 @@ import ObjectMapper
 
 struct AnimeListResponse: Mappable {
     
-    var list : [Anime]!
+    var list : [Anime] = []
    
     init?(map: Map) { }
     
     init() {  }
     
     mutating func mapping(map: Map) {
-        list <- map["lists"]
+        getAnimeList(map: map, parameter: "lists.dropped")
+        getAnimeList(map: map, parameter: "lists.completed")
+        getAnimeList(map: map, parameter: "lists.watching")
+        getAnimeList(map: map, parameter: "lists.plan_to_watch")
     }
     
+    private mutating func getAnimeList(map: Map, parameter:String) {
+        var results : [Anime]?
+        results <- map[parameter]
+        
+        if let results = results {
+            self.list.append(contentsOf: results)
+        }
+    }
 }
