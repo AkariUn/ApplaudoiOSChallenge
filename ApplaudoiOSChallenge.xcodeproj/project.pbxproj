@@ -7,17 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		785876551F5FC5C5006245CE /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785876541F5FC5C5006245CE /* HeaderCell.swift */; };
+		785876581F5FC750006245CE /* SequenceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785876571F5FC750006245CE /* SequenceExtension.swift */; };
 		78F08F661F5F94F200EE786A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F08F651F5F94F200EE786A /* AppDelegate.swift */; };
 		78F08F681F5F94F200EE786A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F08F671F5F94F200EE786A /* ViewController.swift */; };
 		78F08F6B1F5F94F200EE786A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78F08F691F5F94F200EE786A /* Main.storyboard */; };
 		78F08F6D1F5F94F200EE786A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78F08F6C1F5F94F200EE786A /* Assets.xcassets */; };
 		78F08F701F5F94F200EE786A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78F08F6E1F5F94F200EE786A /* LaunchScreen.storyboard */; };
+		78F08F791F5F999D00EE786A /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F08F781F5F999D00EE786A /* ServiceManager.swift */; };
+		78F08F7C1F5FA17D00EE786A /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F08F7B1F5FA17D00EE786A /* AccessToken.swift */; };
+		78F08F7E1F5FBA1700EE786A /* AnimeListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F08F7D1F5FBA1700EE786A /* AnimeListResponse.swift */; };
+		78F08F801F5FBA2000EE786A /* Anime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F08F7F1F5FBA2000EE786A /* Anime.swift */; };
 		99DEFCED096B6989BF1683AD /* Pods_ApplaudoiOSChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18AA38BAB773B69D0F8C27D8 /* Pods_ApplaudoiOSChallenge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		023E3DEBB68193C74FC6D265 /* Pods-ApplaudoiOSChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApplaudoiOSChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-ApplaudoiOSChallenge/Pods-ApplaudoiOSChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		18AA38BAB773B69D0F8C27D8 /* Pods_ApplaudoiOSChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApplaudoiOSChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		785876541F5FC5C5006245CE /* HeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
+		785876571F5FC750006245CE /* SequenceExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequenceExtension.swift; sourceTree = "<group>"; };
 		78F08F621F5F94F200EE786A /* ApplaudoiOSChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApplaudoiOSChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78F08F651F5F94F200EE786A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78F08F671F5F94F200EE786A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,6 +33,10 @@
 		78F08F6C1F5F94F200EE786A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78F08F6F1F5F94F200EE786A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78F08F711F5F94F200EE786A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78F08F781F5F999D00EE786A /* ServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		78F08F7B1F5FA17D00EE786A /* AccessToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessToken.swift; sourceTree = "<group>"; };
+		78F08F7D1F5FBA1700EE786A /* AnimeListResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimeListResponse.swift; sourceTree = "<group>"; };
+		78F08F7F1F5FBA2000EE786A /* Anime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Anime.swift; sourceTree = "<group>"; };
 		A1D066E46AEFC078777E0F26 /* Pods-ApplaudoiOSChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApplaudoiOSChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ApplaudoiOSChallenge/Pods-ApplaudoiOSChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -40,6 +52,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		785876511F5FC590006245CE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				785876521F5FC5AD006245CE /* MainViewController */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		785876521F5FC5AD006245CE /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				785876531F5FC5B8006245CE /* Cell */,
+				78F08F671F5F94F200EE786A /* ViewController.swift */,
+			);
+			name = MainViewController;
+			sourceTree = "<group>";
+		};
+		785876531F5FC5B8006245CE /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				785876541F5FC5C5006245CE /* HeaderCell.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		785876561F5FC73F006245CE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				785876571F5FC750006245CE /* SequenceExtension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		78F08F591F5F94F200EE786A = {
 			isa = PBXGroup;
 			children = (
@@ -61,14 +106,35 @@
 		78F08F641F5F94F200EE786A /* ApplaudoiOSChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				785876561F5FC73F006245CE /* Extensions */,
+				78F08F771F5F998900EE786A /* Managers */,
+				785876511F5FC590006245CE /* ViewControllers */,
+				78F08F7A1F5F99B900EE786A /* Model */,
 				78F08F651F5F94F200EE786A /* AppDelegate.swift */,
-				78F08F671F5F94F200EE786A /* ViewController.swift */,
 				78F08F691F5F94F200EE786A /* Main.storyboard */,
 				78F08F6C1F5F94F200EE786A /* Assets.xcassets */,
 				78F08F6E1F5F94F200EE786A /* LaunchScreen.storyboard */,
 				78F08F711F5F94F200EE786A /* Info.plist */,
 			);
 			path = ApplaudoiOSChallenge;
+			sourceTree = "<group>";
+		};
+		78F08F771F5F998900EE786A /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				78F08F781F5F999D00EE786A /* ServiceManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		78F08F7A1F5F99B900EE786A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				78F08F7B1F5FA17D00EE786A /* AccessToken.swift */,
+				78F08F7D1F5FBA1700EE786A /* AnimeListResponse.swift */,
+				78F08F7F1F5FBA2000EE786A /* Anime.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		7C1D4E520323E318ABE94858 /* Pods */ = {
@@ -219,8 +285,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				785876581F5FC750006245CE /* SequenceExtension.swift in Sources */,
 				78F08F681F5F94F200EE786A /* ViewController.swift in Sources */,
 				78F08F661F5F94F200EE786A /* AppDelegate.swift in Sources */,
+				78F08F801F5FBA2000EE786A /* Anime.swift in Sources */,
+				78F08F7E1F5FBA1700EE786A /* AnimeListResponse.swift in Sources */,
+				78F08F791F5F999D00EE786A /* ServiceManager.swift in Sources */,
+				78F08F7C1F5FA17D00EE786A /* AccessToken.swift in Sources */,
+				785876551F5FC5C5006245CE /* HeaderCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,6 +456,7 @@
 				78F08F761F5F94F200EE786A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

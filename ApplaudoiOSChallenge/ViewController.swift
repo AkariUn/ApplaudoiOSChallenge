@@ -10,16 +10,44 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var items:[AnimeCategory]?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.loadData()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func loadData() {
+        loadAccessToken()
     }
 
+    func loadAccessToken() {
+        ServiceManager.shared.getAccessToken { (result, token) in
+            if let token = token, result == .ok {
+                let userDefaults = UserDefaults.standard
+                userDefaults.set(token.accessToken, forKey: "accessToken")
+                
+            }
+            self.loadAnimeList()
+        }
+    }
+    
+    func loadAnimeList() {
+        ServiceManager.shared.getAnimeList(for: "Melvinkooi", complete: { (result, items) in
+            
+            if let items = items, result == .ok {
+                
+                self.items = items
+                    .categorise { $0.genres.first! }
+                    .map { grouping, animes in
+                        let animeCategory = AnimeCategory(name: grouping, animes: animes)
+                        return animeCategory
+                }
+            }
+        })
+    }
  
 }
 
