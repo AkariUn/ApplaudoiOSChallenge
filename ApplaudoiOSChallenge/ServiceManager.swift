@@ -23,7 +23,7 @@ enum RequestMethod:String {
     case post = "POST"
 }
 
-struct NetworkResource<T> where T : BaseMappable  {
+struct NetworkResource<T> {
     var url:String
     var method:RequestMethod
     var params:[String:Any]?
